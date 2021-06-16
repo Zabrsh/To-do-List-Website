@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const { getRandom } = require("./date");
+const date = require(__dirname + "/date.js");
 
 const app = express();
 
@@ -11,18 +13,10 @@ let items = ["Buy food.","Cook food.","Eat food"];
 let workItems = [];
 app.get("/", function(req,res){
 
-    let today = new Date();
-
-    let options = {
-        weekday:"long",
-        day:"numeric",
-        month:"long"
-    }
-
-    let day = today.toLocaleDateString("en-US",options);
-
+  let day = date;
   res.render("lists", {listTitle: day, newListItems: items});
-
+  let num = date.getRandom();
+  console.log(num);
 });
 
 
