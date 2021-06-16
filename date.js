@@ -13,7 +13,3 @@ exports.getDate = function () {
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> afc1a1eba0f83348d71069c840788d572d795c9e
