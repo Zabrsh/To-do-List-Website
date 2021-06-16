@@ -35,7 +35,7 @@ app.post("/", function(req,res){
       workItems.push(item);
       res.redirect("/work");
     } else {
-      
+
       items.push(item);
       res.redirect("/");
     }
@@ -44,7 +44,11 @@ app.post("/", function(req,res){
 app.get("/work", function(req,res){
   res.render("lists", {listTitle: "Work Titles", newListItems: workItems});
   });
-  
+
+app.get("/about", function(req,res){
+    res.render("about");
+    });
+    
 
 app.listen(3000, function(){
   console.log("Server running on port 3000.");
