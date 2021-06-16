@@ -13,7 +13,4 @@ exports.getDate = function () {
 }
 
 
-exports.getRandom = function () {
-     let num = 8;
-    return num; 
-}
+
