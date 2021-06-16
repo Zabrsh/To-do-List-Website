@@ -12,8 +12,11 @@ exports.getDate = function () {
 
 }
 
+<<<<<<< HEAD
 
 exports.getRandom = function () {
      let num = 8;
     return num; 
 }
+=======
+>>>>>>> 73adb47394c4e6a0960edbd4479f10074604dc8a
