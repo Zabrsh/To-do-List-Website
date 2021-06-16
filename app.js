@@ -16,7 +16,7 @@ app.get("/", function(req,res){
   let day = date;
   res.render("lists", {listTitle: day, newListItems: items});
   let num = date.getRandom();
-  console.log(num);
+  
 });
 
 
